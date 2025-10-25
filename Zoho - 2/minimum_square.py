@@ -1,0 +1,16 @@
+def minSquares(n):
+    dp = [float('inf')] * (n + 1) 
+    dp[0] = 0 
+    for i in range(1, n + 1):
+        j = 1
+        while j * j <= i:
+            dp[i] = min(dp[i], 1 + dp[i - j * j])
+            j += 1
+    return dp[n]
+
+def oddEven(num):
+    val = ["Even" , "odd"]
+    return(val[num%2])
+    
+print(minSquares(9))
+print(oddEven(7))
