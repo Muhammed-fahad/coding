@@ -6,9 +6,10 @@
 
 arr = [1,2,3,4,5,6,7,8,9]
 gap = 3
-ans = 0
+value = []
 for i in range(len(arr)//gap):
+  ans = 0
   for j in range(i,len(arr),gap):
     ans+=arr[j]
-  print(ans,end=" ")
-  ans=0
+  value.append(ans)
+print(value)
