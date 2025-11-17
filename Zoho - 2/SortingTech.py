@@ -13,7 +13,7 @@ ass = sorted(value_store.items())
 print("Alphabetic" , ass)
 
 # alpahebtic decending
-alp_dec = dict(sorted(value_store.items() , reverse=True))
+alp_dec = sorted(value_store.items() , reverse=True)
 
 print("alp_decending" , alp_dec)
 
