@@ -1,4 +1,4 @@
-from UserDb import registerUser , UserMenu
+import UserDb
 
 def main():
   while(True):
@@ -12,10 +12,10 @@ def main():
       print("you may enter String type of data Check properly")
       
     if choise == 1:
-      registerUser()
+      UserDb.registerUser()
     
     elif choise == 2:
-      UserMenu()
+      UserDb.UserMenu()
     
     elif choise == 3:
       print("Exiting....!")

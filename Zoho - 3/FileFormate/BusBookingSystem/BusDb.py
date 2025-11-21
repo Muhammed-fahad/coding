@@ -4,6 +4,7 @@ class Bus:
     self.busNumber = busNumber
     self.capasity = capasity
     self.busgoingareas = busgoingareas
+    self.passengers = {}
 
 busdb = {}  
 
