@@ -46,3 +46,9 @@ else:
         print("Anagram")
     else:
         print("Not anagram")
+
+
+from collections import Counter
+a = input("Enter first string: ").replace(" ", "").lower()
+b = input("Enter second string: ").replace(" ", "").lower()
+print("Anagram" if Counter(a) == Counter(b) else "Not anagram")
